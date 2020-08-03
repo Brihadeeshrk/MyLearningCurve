@@ -8,13 +8,11 @@ namespace CSharp1
     {
         static void Main(string[] args)
         {
-            var books = new BookRepository().GetBooks();
-
-            var cheapBooks = books.FindAll(b => b.Price < 10);
-
-            foreach (var book in cheapBooks)
+            static void Main(string[] args)
             {
-                Console.WriteLine(book.Title);
+
+                Func<int, int, int> add = (a, b) => a + b;
+                Console.WriteLine(add(2, 3));
             }
         }
     }
