@@ -8,12 +8,8 @@ namespace CSharp1
     {
         static void Main(string[] args)
         {
-            static void Main(string[] args)
-            {
-
-                Func<int, int, int> add = (a, b) => a + b;
-                Console.WriteLine(add(2, 3));
-            }
+            Func<int, int, int> add = (a, b) => a + b;
+            Console.WriteLine(add(2, 3));
         }
     }
 }
