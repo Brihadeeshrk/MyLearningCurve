@@ -1,6 +1,8 @@
-function log(message){
-    console.log(message);
-}
+import { LikeCount } from './LikeCount'
 
-var message = "hello world";
-log(message);
+let likeCounter = new LikeCount(true, 100);
+
+let likeNumber = likeCounter.setLikes(10);
+let buttonOn = likeCounter.getButtonStatus();
+
+console.log('No: of Likes: '+likeNumber+'\n'+'Button On?'+buttonOn);
