@@ -7,5 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CoursesComponent {
   title="List of Courses";
-  isActive = false;
+  
+  onSave(){
+    console.log("button clicked")
+  }
 }
